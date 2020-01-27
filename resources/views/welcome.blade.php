@@ -36,6 +36,7 @@ $beta=round(($preciodolar*$alfa),0);
         <title>Flesoj</title>
         
         <!-- Fonts -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
        

@@ -16,19 +16,23 @@
 </head>
 <body>
     <div ><h1>crear</h1></div>
-    <div class="form" ><form action="/view" method="POST">
+    <form action="/view" method="POST">
+        {{ csrf_field() }}
     <table style="border: solid 1px;">
     <tr>
     <td><label for="nombre">NOMBRE</label></td>
     <td><label for="precio">PRECIO</label></td>
-    <td></td>
+    <td><label for="id_cliente">CLIENTE</label></td>
     </tr>
     <tr>
     <td><input type="text" name="nombre" id=""></td>
     <td><input type="text" name="precio" id=""></td>
+    <td><input type="text" name="id_cliente" id=""></td>
     <td><input type="submit" value="ENVIAR"></td>
-    @csrf
+   
+   
     </tr>
+    
     <tr>
     <td></td>
     <td></td>
@@ -37,7 +41,6 @@
     </table>
 
     </form>
-</div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

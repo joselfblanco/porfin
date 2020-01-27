@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::resource('/view', 'trabajo_controller');
 
 Route::resource('/clientes', 'cliente_controller');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Flesoj</title>
     <style>
@@ -17,6 +18,7 @@
 <body>
 <h1> hola cliente</h1>
 <form action="/clientes" method="POST">
+    {{ csrf_field() }}
     <table style="border: solid 1px;">
     <tr>
     <td><label for="nombre">NOMBRE CLIENTE</label></td>
@@ -25,7 +27,7 @@
     <tr>
     <td><input type="text" name="nombre" id=""></td>
         <td><input type="submit" value="ENVIAR"></td>
-   @csrf
+   
     </tr>
     <tr>
     <td></td>

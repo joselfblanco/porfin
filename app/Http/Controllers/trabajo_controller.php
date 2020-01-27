@@ -44,6 +44,7 @@ class trabajo_controller extends Controller
         $producto= new Producto;
        $producto->nombre=strtoupper($dato->nombre);
        $producto->precio=$dato->precio;
+       $producto->id_cliente=$dato->id_cliente;
        $producto->save();
        return view('create',$dato); 
        //
